@@ -7,6 +7,9 @@
     color: var(--dark-gray);
   }
 
+  main {
+    max-width: 100%;
+  }
   h1,
   h2 {
     display: inline-block;
