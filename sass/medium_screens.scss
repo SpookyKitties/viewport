@@ -1,0 +1,31 @@
+/* ---------- MEDIUM SCREEN STYLES ---------- */
+/* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
+@media only screen and (min-width: 768px) {
+  header,
+  footer {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section {
+    background-color: var(--light-gray);
+  }
+
+  #one {
+    grid-column: 1/3;
+  }
+
+  #two {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  #seven {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+} /* --------------- END MEDIUM SCREEN SIZES --------------- */
