@@ -272,24 +272,25 @@ section {
   padding: 1em;
 }
 
-/* ---------- EXTRA SMALL SCREEN STYLES ---------- */
-header,
-footer {
-  background-color: var(--pink);
-  color: var(--white);
+/* ---------- Extra SMALL SCREEN STYLES ---------- */
+/* --------------- BEGIN Extra SMALL SCREEN SIZES --------------- */
+@media only screen and (max-width: 599px) {
+  header,
+  footer {
+    background-color: var(--pink);
+    color: var(--white);
+  }
+  section {
+    background-color: var(--red);
+    color: var(--light-gray);
+  }
+  img {
+    margin: 0.75em 0.75em 0.75em 0;
+    display: inline;
+    float: left;
+  }
 }
-
-section {
-  background-color: var(--red);
-  color: var(--light-gray);
-}
-
-img {
-  margin: 0.75em 0.75em 0.75em 0;
-  display: inline;
-  float: left;
-}
-
+/* --------------- END SMALL SCREEN SIZES --------------- */
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
 @media only screen and (min-width: 600px) {
@@ -323,7 +324,7 @@ img {
 /* --------------- END SMALL SCREEN SIZES --------------- */
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 889px) {
   header,
   footer {
     background-color: var(--black);
@@ -349,7 +350,7 @@ img {
 } /* --------------- END MEDIUM SCREEN SIZES --------------- */
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 889px) {
+@media only screen and (min-width: 889px) and (max-width: 1200px) {
   header,
   footer {
     background-color: var(--lime-green);
@@ -382,6 +383,39 @@ img {
   }
 }
 /* --------------- END LARGE SCREEN SIZES --------------- */
+/* ---------- LARGE SCREEN STYLES ---------- */
+/* --------------- BEGIN LARGE SCREEN SIZES --------------- */
+@media only screen and (min-width: 1800px) {
+  header,
+  footer {
+    background-color: var(--blue);
+    color: var(--dark-gray);
+  }
+  h1,
+  h2 {
+    display: inline-block;
+  }
+  section {
+    background-color: var(--lime-green);
+  }
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #one,
+  #two,
+  #seven,
+  #eight {
+    grid-column: initial;
+    grid-row: 1;
+  }
+  #three,
+  #four,
+  #five,
+  #six {
+    grid-row: 2;
+  }
+}
+/* --------------- END LARGE SCREEN SIZES --------------- */
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
 @media only screen and (min-width: 1380px) {
@@ -393,7 +427,7 @@ img {
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
   header,
   footer {
     background-color: var(--orange);
@@ -455,36 +489,5 @@ img {
   }
 }
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
-/* ---------- Extra SMALL SCREEN STYLES ---------- */
-/* --------------- BEGIN Extra SMALL SCREEN SIZES --------------- */
-@media only screen and (max-width: 599px) {
-  header,
-  footer {
-    background-color: var(--blue);
-    color: var(--black);
-  }
-  main {
-    display: grid;
-    grid-gap: 0.75em;
-    grid-template-columns: 1fr 1fr;
-    margin: 1em 0;
-  }
-  section {
-    background-color: var(--lime-green);
-    color: var(--black);
-    margin: 0;
-  }
-  #one,
-  #two,
-  #seven,
-  #eight {
-    grid-column: 1/3;
-  }
-  img {
-    width: 100%;
-    max-width: 595px;
-  }
-}
-/* --------------- END SMALL SCREEN SIZES --------------- */
 
 /*# sourceMappingURL=Parkinson.styles.css.map */
